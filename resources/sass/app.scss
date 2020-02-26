@@ -1,3 +1,4 @@
+
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 
@@ -12,7 +13,7 @@
 // Buttons
 @import "buttons";
 
-// Password
+// Inputs
 @import "forms";
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
@@ -24,6 +25,7 @@ body.agm-standard {
     @include link-standard;
     @include paragraph-text;
     @include button-standard;
+    @include inputs;
 
     .agm-standard-login {
         margin: 5rem 10%;

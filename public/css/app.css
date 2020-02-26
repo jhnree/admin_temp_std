@@ -10957,6 +10957,14 @@ body.agm-standard .btn-standard:focus {
   box-shadow: none;
 }
 
+body.agm-standard .uc {
+  text-transform: uppercase;
+}
+
+body.agm-standard .lc {
+  text-transform: lowercase;
+}
+
 body.agm-standard .agm-standard-login {
   margin: 5rem 10%;
 }

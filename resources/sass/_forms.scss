@@ -38,3 +38,13 @@
     .username-parent {
     }
 }
+
+@mixin inputs {
+    .uc {
+        text-transform: uppercase;
+    }
+
+    .lc {
+        text-transform: lowercase;
+    }
+}

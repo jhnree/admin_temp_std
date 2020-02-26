@@ -46,8 +46,44 @@ function username() {
 }
 
 function maskInput() {
-    $("#sss").attr({ placeholder: "00-0000000-0" });
-    $("#sss").mask("99-9999999-9");
+    // Accept Alpha Characters both uppercase and lowercase
+    $("input.alpha").inputmask({ regex: "[a-z, A-Z]*"});
+    // Accept Numeric Characters
+    $("input.numeric").inputmask({ regex: "[0-9]*"});
+    // Mobile NUmber
+    $("input.mobile-no").inputmask("99-999-999-9999",
+                                    {placeholder:"00-000-000-0000"}).val('639');
+    // Adding Placeholder
+    $("input.sss").attr({ placeholder: "00-0000000-0" });
+    $("input.tin").attr({ placeholder: "000-000-000-000" });
+    $("input.hdmf").attr({ placeholder: "0000-0000-0000" });
+    $("input.philhealth").attr({ placeholder: "00-000000000-0" });
+    
+    // Defining required characters
+    $("input.sss").inputmask("99-9999999-9", 
+                            {placeholder:"00-0000000-0", 
+                            "oncomplete": function(){
+                                    // function  here
+                                }
+                            });
+        $("input.tin").inputmask("999-999-999-999", 
+                            {placeholder:"000-000-000-000", 
+                            "oncomplete": function(){
+                                    // function  here
+                                }
+                            });
+        $("input.hdmf").inputmask("9999-9999-9999", 
+                            {placeholder:"0000-0000-0000", 
+                            "oncomplete": function(){
+                                    // function  here
+                                }
+                            });
+        $("input.philhealth").inputmask("00-999999999-9", 
+                            {placeholder:"00-000000000-0", 
+                            "oncomplete": function(){
+                                    // function  here
+                                }
+                            });
 }
 
 function brandButtons() {
