@@ -1,8 +1,430 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
+@import 'global';
+@import 'card';
+@import 'themes';
+@import 'modal';
+@import 'toast';
 @import 'variables';
 
+// Buttons
+@import "buttons";
+
+// Password
+@import "forms";
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+body.agm-standard {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include header-text;
+    @include input-form-standard;
+    @include link-standard;
+    @include paragraph-text;
+    @include button-standard;
+
+    .agm-standard-login {
+        margin: 5rem 10%;
+
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+            font-size: 2rem;
+        }
+    
+        img {
+            width: 50%;
+            height: 50%;
+            margin: 30px 25% 60px 25%;
+            border-radius: 100%;
+        }
+
+        .standard-btn-group {
+            margin: 1rem 0;
+            padding: 0;
+
+            .standard-btn-rounded-left {
+                @include button-standard;
+                @include button-rounded-left;
+                background-color: $default-fb-color;
+                color: $default-text-white;
+
+                &:hover {
+                    background-color: $default-fb-color;
+                }
+            }
+
+            .standard-btn-rounded-right {
+                @include button-standard;
+                @include button-rounded-right;
+                background-color: $default-gmail-color;
+                color: $default-text-white;
+
+                &:hover {
+                    background-color: $default-gmail-color;
+                }
+            }
+        }
+    }
+    input {
+        outline: none;
+        box-shadow: none !important;
+
+        &.rounded {
+            border-radius: 80px !important;
+        }
+        &.primary {
+            border: #3490dc 1px solid !important;
+        }
+        &.secondary {
+            border: #6c757d 1px solid !important;
+        }
+        &.success {
+            border: #22bb33 1px solid !important;
+        }
+        &.danger {
+            border: #e3342f 1px solid !important;
+        }
+        &.info {
+            border: #17a2b8 1px solid !important;
+        }
+        &.light {
+            border: #d4d4d4 1px solid !important;
+        }
+        &.dark {
+            border: #343a40 1px solid !important;
+        }
+    }
+
+    .input-group {
+        &.rounded-append {
+            input {
+                border-radius: 80px 0 0 80px !important;
+            }
+            .input-group-append span {
+                border-radius: 0 80px 80px 0 !important;
+            }
+        }
+
+        &.rounded-prepend {
+            input {
+                border-radius: 0 80px 80px 0 !important;
+            }
+            .input-group-prepend span {
+                border-radius: 80px 0 0 80px !important;
+                // width: 30px !important;
+            }
+        }
+    }
+
+    .agm-standard-login {
+        margin: 5rem 10%;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+            font-size: 2rem;
+            font-family: "Gentona";
+            color: $default-text-color;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            margin: 30px 25% 60px 25%;
+            border-radius: 100%;
+        }
+
+        form.standard-form {
+            .form-group {
+                margin-bottom: 0.5rem !important;
+
+                label {
+                    color: $default-text-color;
+                    font-size: 0.9rem;
+                }
+
+                .form-control {
+                    color: $default-text-color;
+                    border-radius: 50px;
+                    font-size: 0.8rem;
+                    padding: 0 0.9rem;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border: solid 1px rgb(139, 139, 139);
+                    }
+                }
+            }
+        }
+
+        .standard-link {
+            @include link-standard;
+        }
+
+        a.standard-forgot {
+            @include link-standard;
+            float: right;
+            margin: -5px 0 0 0;
+        }
+
+        a.standard-register {
+            @include link-standard;
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-standard {
+            display: block;
+            width: 100%;
+            @include button-standard;
+            @include button-rounded;
+        }
+
+        .row {
+            margin-top: 4rem;
+            margin-bottom: 2px;
+
+            .divider {
+                vertical-align: middle !important;
+            }
+
+            p {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: $default-text-color;
+                text-align: center;
+                margin-top: 3px;
+            }
+        }
+
+        .standard-btn-group {
+            margin: 1rem 0;
+            padding: 0;
+
+            .standard-btn-rounded-left {
+                @include button-standard;
+                @include button-rounded-left;
+                background-color: $default-fb-color;
+
+                &:hover {
+                    background-color: $default-fb-color;
+                }
+            }
+
+            .standard-btn-rounded-right {
+                @include button-standard;
+                @include button-rounded-right;
+                background-color: $default-gmail-color;
+
+                &:hover {
+                    background-color: $default-gmail-color;
+                }
+            }
+        }
+    }
+
+    .card {
+        @include card-default;
+
+        // Solid Cards
+       &.card-primary {
+           @include theme(primary, solid);
+       }
+
+       &.card-success {
+        @include theme(success, solid);
+       }
+
+       &.card-danger {
+        @include theme(danger, solid);
+       }
+
+       &.card-warning {
+        @include theme(warning, solid);
+       }
+
+       &.card-info {
+        @include theme(info, solid);
+       }
+
+       &.card-light {
+        @include theme(light, solid);
+       }
+
+       &.card-dark {
+        @include theme(dark, solid);
+       }
+       
+       // Outline Cards
+       &.card-outline-primary {
+            @include theme(primary, outline);
+            border: solid 1px #0097e6;
+        }
+
+        &.card-outline-success {
+            @include theme(success, outline);
+            border: solid 1px #44bd32;
+        }
+
+        &.card-outline-danger {
+            @include theme(danger, outline);
+            border: solid 1px #c23616;
+        }
+
+        &.card-outline-warning {
+            @include theme(warning, outline);
+            border: solid 1px #e1b12c;
+        }
+
+        &.card-outline-info {
+            @include theme(info, outline);
+            border: solid 1px #40739e;
+        }
+
+        &.card-outline-light {
+            @include theme(light, outline);
+            border: solid 1px #f5f6fa;
+        }
+
+        &.card-outline-dark {
+            @include theme(dark, outline);
+            border: solid 1px #2f3640;
+        }
+   }
+
+   // Toasts
+   .toast {
+       @include toast-default;
+
+        // Default Toast
+       &.toast-primary {
+            @include theme(primary, solid);
+        }
+
+        &.toast-success {
+            @include theme(success, solid);
+        }
+
+        &.toast-danger {
+            @include theme(danger, solid);
+        }
+
+        &.toast-warning {
+            @include theme(warning, solid);
+        }
+
+        &.toast-info {
+            @include theme(info, solid);
+        }
+
+        &.toast-light {
+            @include theme(light, solid);
+        }
+
+        &.toast-dark {
+            @include theme(dark, solid);
+        }
+
+        
+        // Custom Solid Toast
+        &.toast-custom-primary-solid {
+            @include theme(primary, custom);
+        }
+        
+        &.toast-custom-success-solid {
+            @include theme(success, custom);
+        }
+
+        &.toast-custom-danger-solid {
+            @include theme(danger, custom);
+        }
+
+        &.toast-custom-warning-solid {
+            @include theme(warning, custom);
+        }
+
+        &.toast-custom-info-solid {
+            @include theme(info, custom);
+        }
+
+        &.toast-custom-light-solid {
+            @include theme(light, custom);
+        }
+
+        &.toast-custom-dark-solid {
+            @include theme(dark, custom);
+        }
+
+        
+        // Custom Outline Toast
+        &.toast-custom-primary-outline {
+            @include theme(primary, outline);
+        }
+        
+        &.toast-custom-success-outline {
+            @include theme(success, outline);
+        }
+
+        &.toast-custom-danger-outline {
+            @include theme(danger, outline);
+        }
+
+        &.toast-custom-warning-outline {
+            @include theme(warning, outline);
+        }
+
+        &.toast-custom-info-outline {
+            @include theme(info, outline);
+        }
+
+        &.toast-custom-light-outline {
+            @include theme(light, outline);
+        }
+
+        &.toast-custom-dark-outline {
+            @include theme(dark, outline);
+        }
+   }
+
+    .btn-standard-parent {
+        .btn {
+            outline: none !important;
+            box-shadow: none !important;
+            min-width: 60px !important;
+            min-height: 20px !important;
+            font-family: "Gentona";
+            text-transform: uppercase;
+
+            &.rounded {
+                border-radius: 80px !important;
+            }
+
+            .rounded-right {
+                border-radius: 0 80px 80px 0 !important;
+            }
+
+            .rounded-left {
+                border-radius: 80px 0 0 80px !important;
+            }
+
+            // Normal
+            @include normal;
+
+            // Outline
+            @include outline;
+        }
+    }
+    // Username
+    @include username;
+    // Password
+    @include password;
+    // Button Brand
+    @include brands;
+}

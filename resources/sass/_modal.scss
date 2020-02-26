@@ -1,0 +1,35 @@
+@mixin modal-default() {
+    .modal-content {
+        .modal-header {
+            color: $default-text-color;
+            font-family: 'Gentona';
+            text-transform: uppercase;
+
+            .modal-title {
+                font-size: 1rem;
+            }
+
+            button {
+                &:focus {
+                    box-shadow: none;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .modal-body {
+            font-size: .8rem;
+            color: $default-text-color;
+        }
+
+        .modal-footer {
+            display: block;
+            justify-content: center;
+
+            button {
+                margin: 1% 2%;
+            }
+        }
+    }
+}

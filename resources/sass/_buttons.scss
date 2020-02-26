@@ -1,0 +1,483 @@
+@mixin brands {
+    @media (max-width: 800px) {
+        .brand-btn {
+            width: 2.0625rem !important;
+            &:hover,
+            &:focus {
+                width: fit-content !important;
+                color: #fff !important;
+            }
+        }
+    }
+
+    .brand-btn {
+        transition: 0.3s;
+        color: #ffffff;
+        text-align: left;
+        height: 2.0625rem;
+        margin: 10px 0;
+        &.rounded {
+            border-radius: 80px !important;
+            i {
+                border-radius: 80px !important;
+            }
+        }
+        i {
+            background: #00000033;
+            display: inline-block;
+            width: 2.0625rem;
+            line-height: 2.1rem;
+            margin: -0.375rem -0.75rem;
+            text-align: center;
+        }
+        i + span {
+            margin-left: 1.5rem;
+            text-align: center;
+        }
+
+        &.facebook {
+            background: #3b5998;
+            &:hover {
+                background: #30497c;
+            }
+        }
+
+        &.googlePlus {
+            background: #ba3929;
+        }
+
+        &.behance {
+            background: #1769ff;
+            &:hover {
+                background: #0055f0;
+            }
+        }
+
+        &.css3 {
+            background: #0170ba;
+            &:hover {
+                background: #015994;
+            }
+        }
+
+        &.dribbble {
+            background: #ea4c89;
+            &:hover {
+                background: #e62a72;
+            }
+        }
+
+        &.dropbox {
+            background: #007ee5;
+            &:hover {
+                background: #0069bf;
+            }
+        }
+
+        &.flickr {
+            background: #ff0084;
+            &:hover {
+                background: #d90070;
+            }
+        }
+
+        &.github {
+            background: #4183c4;
+            &:hover {
+                background: #3570aa;
+            }
+        }
+
+        &.html5 {
+            background: #e34f26;
+            &:hover {
+                background: #e34f26;
+            }
+        }
+
+        &.instagram {
+            background: #517fa4;
+            &:hover {
+                background: #446b8a;
+            }
+        }
+
+        &.linkedin {
+            background: #4875b4;
+            &:hover {
+                background: #3d6399;
+            }
+        }
+
+        &.openid {
+            background: #f78c40;
+            &:hover {
+                background: #f5761b;
+            }
+        }
+
+        &.pinterest {
+            background: #cb2027;
+            &:hover {
+                background: #aa1b21;
+            }
+        }
+
+        &.reddit {
+            background: #ff4500;
+            &:hover {
+                background: #d93b00;
+            }
+        }
+
+        &.spotify {
+            background: #1db954;
+            &:hover {
+                background: #169a45;
+            }
+        }
+
+        &.stackOverflow {
+            background: #fe7a15;
+            &:hover {
+                background: #ec6701;
+            }
+        }
+
+        &.tumblr {
+            background: #32506d;
+            &:hover {
+                background: #263d53;
+            }
+        }
+
+        &.twitter {
+            background: #00aced;
+            &:hover {
+                background: #0090c7;
+            }
+        }
+
+        &.vimeo {
+            background: #aad450;
+            &:hover {
+                background: #9bcc32;
+            }
+        }
+
+        &.vk {
+            background: #45668e;
+            &:hover {
+                background: #385474;
+            }
+        }
+
+        &.xing {
+            background: #026466;
+            &:hover {
+                background: #013f40;
+            }
+        }
+
+        &.yahoo {
+            background: #400191;
+            &:hover {
+                background: #2f016b;
+            }
+        }
+
+        &.youtube {
+            background: #b00;
+            &:hover {
+                background: #950000;
+            }
+        }
+    }
+}
+
+@mixin normal {
+    // primary
+    &.btn-standard-primary {
+        border: $btn-primary-std 1px solid !important;
+
+        &:hover {
+            color: $btn-primary-std !important;
+            background: $real-white;
+        }
+
+        &:hover {
+            color: $real-white !important;
+        }
+
+        &:focus {
+            color: $btn-primary-std !important;
+            border: $btn-primary-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-primary-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // secondary
+    &.btn-standard-secondary {
+        border: $btn-secondary-std 1px solid !important;
+        &:hover {
+            color: $btn-secondary-std !important;
+            background: $real-white;
+        }
+        &:focus {
+            color: $btn-secondary-std !important;
+            border: $btn-secondary-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-secondary-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Success
+    &.btn-standard-success {
+        background: $btn-success-std !important;
+        border: $btn-success-std 1px solid;
+        &:hover {
+            color: $btn-success-std !important;
+            background: $real-white !important;
+        }
+        &:focus {
+            color: $btn-success-std !important;
+            border: $btn-success-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-success-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Danger
+    &.btn-standard-danger {
+        border: $btn-danger-std 1px solid;
+
+        &:hover {
+            color: $btn-danger-std !important;
+            background: $real-white !important;
+        }
+
+        &:focus {
+            color: $btn-danger-std !important;
+            border: $btn-danger-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-danger-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Warning
+    &.btn-standard-warning {
+        background: $btn-warning-std !important;
+        border: $btn-warning-std 1px solid;
+
+        &:hover {
+            color: $btn-warning-std-forecolor !important;
+            background: $real-white !important;
+        }
+
+        &:focus {
+            color: $btn-warning-std-forecolor !important;
+            border: $btn-warning-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-warning-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Info
+    &.btn-standard-info {
+        color: $real-white !important;
+        background: $btn-info-std !important;
+        border: $btn-info-std 1px solid;
+
+        &:hover {
+            color: $btn-info-std !important;
+            background: $real-white !important;
+        }
+
+        &:focus {
+            color: $btn-info-std !important;
+            border: $btn-info-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-info-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Light
+    &.btn-standard-light {
+        // color: $real-white !important;
+        background: $real-white !important;
+        border: $real-white 1px solid;
+
+        &:hover {
+            background: $btn-light-std-hover !important;
+        }
+
+        &:focus {
+            border: $real-white 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-light-std-shadow 1px 2px 4px !important;
+        }
+    }
+
+    // Dark
+    &.btn-standard-dark {
+        color: $real-white !important;
+        background: $btn-dark-std !important;
+        border: $btn-dark-std 1px solid;
+
+        &:hover {
+            color: $btn-dark-std !important;
+            background: $real-white !important;
+        }
+
+        &:focus {
+            color: $btn-dark-std !important;
+            border: $btn-dark-std 1px solid !important;
+            background: $btn-std-focus !important;
+            box-shadow: $btn-dark-std-shadow 1px 2px 4px !important;
+        }
+    }
+}
+
+@mixin outline {
+    // Outline Primary
+    &.outline-primary-std {
+        border: $btn-outline-primary-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-primary-std !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-primary-std-shadow 0 0 7px !important;
+            background: $btn-outline-primary-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Secondary
+    &.outline-secondary-std {
+        border: $btn-outline-secondary-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-secondary-std !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-secondary-std-shadow 0 0 7px !important;
+            background: $btn-outline-secondary-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Success
+    &.outline-success-std {
+        border: $btn-outline-success-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-success-std !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-success-std-shadow 0 0 7px !important;
+            background: $btn-outline-success-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Danger
+    &.outline-danger-std {
+        border: $btn-outline-danger-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-danger-std !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-danger-std-shadow 0 0 7px !important;
+            background: $btn-outline-danger-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Warning
+    &.outline-warning-std {
+        color: #000000 !important;
+        border: $btn-outline-warning-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-warning-std !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-warning-std-shadow 0 0 7px !important;
+            background: $btn-outline-warning-std !important;
+            color: #000000 !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline info
+    &.outline-info-std {
+        border: $btn-outline-info-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-info-std !important;
+            color: $real-white !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-info-std-shadow 0 0 7px !important;
+            background: $btn-outline-info-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Light
+    &.outline-light-std {
+        color: #000000 !important;
+        border: $btn-outline-light-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            background: $btn-outline-light-std-hover !important;
+            color: #000000 !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-light-std-shadow 0 0 7px !important;
+            background: $btn-outline-light-std !important;
+            color: #000000 !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+
+    // Outline Dark
+    &.outline-dark-std {
+        color: #000000 !important;
+        border: $btn-outline-dark-std 1px solid !important;
+        background: $real-white !important;
+
+        &:hover {
+            color: #000000 !important;
+        }
+
+        &:focus {
+            box-shadow: $btn-outline-dark-std-shadow 0 0 7px !important;
+            background: $btn-outline-dark-std !important;
+            color: $real-white !important;
+            border: $real-white 1px solid !important;
+        }
+    }
+}

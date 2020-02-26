@@ -1,0 +1,40 @@
+// Password Field
+@mixin password {
+    // Password
+    .password {
+        cursor: pointer;
+
+        span {
+            border-left: none;
+            background: #fff !important;
+            pointer-events: none;
+            font-size: 0.8rem !important;
+        }
+    }
+
+    .password-parent {
+        input {
+            border-right: none !important;
+        }
+        input:focus + div span {
+            border: #a1cbef 1px solid !important;
+        }
+        &.password-rounded {
+            .input-group-append span {
+                border-radius: 0 80px 80px 0 !important;
+            }
+            .input-group-prepend span {
+                border-radius: 80px 0 0 80px !important;
+            }
+        }
+    }
+}
+
+@mixin username {
+    .username span {
+        width: 40px;
+    }
+
+    .username-parent {
+    }
+}

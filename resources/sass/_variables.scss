@@ -7,13 +7,112 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$default-text-color: #353b48;
+$default-text-white: #ffffff;
+$default-text-color-light: #718093;
+$default-body: #f5f6fa;
+
+	// Color for Buttons
+	$default-button-color: #00A8FF;
+	$default-button-color-hover: #0097e6;
+
+	// Color for Links
+	$default-link-color: #00A8FF;
+	$default-link-color-hover: #0097e6;
+
+	//Color for Facebook
+	$default-fb-color: #4A81D6;
+
+	// Color for Gmail
+	$default-gmail-color: #DF4D40;
+
+	// Color for Primary
+	$default-primary: #00a8ff;
+	$default-primary-dark: #0097e6;
+
+	// Color for Success
+	$default-success: #4cd137;
+	$default-success-dark: #44bd32;
+
+	// Color for Danger
+	$default-danger: #e84118;
+	$default-danger-dark: #c23616;
+
+	// Color for Warning
+	$default-warning: #fbc531;
+	$default-warning-dark: #e1b12c;
+
+	// Color for Info
+	$default-info: #487eb0;
+	$default-info-dark: #40739e;
+
+	// Color for Light
+	$default-light: #f5f6fa;
+	$default-light-dark: #dcdde1;
+
+	// Color for Dark
+	$default-dark: #353b48;
+	$default-dark-dark: #2f3640;
+
+// Fonts
+@font-face {
+	font-family: 'Gentona';
+	src: url('Rene Bieder - Gentona ExtraBold DEMO.otf') format('opentype');
+}
+
+// Button Colors
+$default-white: #f1f1f1;
+$real-white: #ffffff;
+$btn-std-focus: #f4f4f4;
+
+$btn-primary-std: #3490dc;
+$btn-primary-std-shadow: #1d68a5;
+
+$btn-secondary-std: #6c757d;
+$btn-secondary-std-shadow: #454c52;
+
+$btn-success-std: #22bb33;
+$btn-success-std-shadow: #159924;
+
+$btn-danger-std: #e3342f;
+$btn-danger-std-shadow: #c2231e;
+
+$btn-warning-std: #ffcc00;
+$btn-warning-std-shadow: #c49e05;
+$btn-warning-std-forecolor: #ffc400;
+
+$btn-info-std: #17a2b8;
+$btn-info-std-shadow: #087283;
+
+$btn-light-std-hover: #d4d4d4;
+$btn-light-std-shadow: #d4d4d4;
+
+$btn-dark-std: #343a40;
+$btn-dark-std-shadow: #1e2327;
+
+$btn-outline-primary-std-shadow: $btn-primary-std-shadow;
+$btn-outline-primary-std: $btn-primary-std;
+
+$btn-outline-secondary-std-shadow: $btn-secondary-std-shadow;
+$btn-outline-secondary-std: $btn-secondary-std;
+
+$btn-outline-success-std-shadow: $btn-success-std-shadow;
+$btn-outline-success-std: $btn-success-std;
+
+$btn-outline-danger-std-shadow: $btn-danger-std-shadow;
+$btn-outline-danger-std: $btn-danger-std;
+
+$btn-outline-warning-std-shadow: $btn-warning-std-shadow;
+$btn-outline-warning-std: $btn-warning-std;
+
+$btn-outline-info-std-shadow: $btn-info-std-shadow;
+$btn-outline-info-std: $btn-info-std;
+
+$btn-outline-light-std-shadow: $btn-light-std-shadow;
+$btn-outline-light-std: $real-white;
+$btn-outline-light-std-hover: $default-white;
+
+$btn-outline-dark-std-shadow: $btn-dark-std-shadow;
+$btn-outline-dark-std: $btn-dark-std;
+
+// END BUTTON COLORS

@@ -1,0 +1,245 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #575d5f;
+    border-radius: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0 0 120px 0 !important;
+}
+
+/* 
+    SIDEBAR CONTENT START
+ */
+.sidebar-content {
+    /* margin: 60px 0; */
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1;
+    background: #33383a;
+    color: #ffffff;
+}
+
+.sidebar-content a:hover {
+    background: #f1f1f1;
+    color: #2d3436;
+}
+
+.sidebar-content a:focus {
+    background: #f1f1f1;
+    color: #2d3436;
+}
+
+.sidebar-content .group .title {
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #aaaaaa;
+}
+
+.group .first-level button {
+    display: block;
+    transition: 0.3s;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    color: #f1f1f1;
+    height: 50px;
+    background: #2d3436;
+}
+
+.group .first-level button .dd-icon {
+    font-size: 0.5rem;
+    font-weight: 100 !important;
+}
+
+.group .first-level button:hover,
+.group .first-level button:focus {
+    background: #f1f1f1;
+    color: #2d3436;
+    /* font-size: 1rem; */
+}
+
+.group .first-level button:active {
+    background: #2d3436;
+    color: #ffffff;
+    /* font-size: 1rem; */
+    /* font-weight: 600; */
+}
+
+.group .second-level {
+    overflow: hidden;
+    display: none;
+    background: #f1f1f1;
+    border-radius: 7px;
+    margin: 7px;
+    color: #2d3436;
+    border: none;
+}
+
+.group .second-level .second-level-btn {
+    display: block;
+    transition: 0.3s;
+    /* border-radius: 10px !important; */
+    width: 100%;
+    text-align: left;
+    color: #2d3436;
+    height: 40px;
+    padding: 0 40px;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.second-level .third-level .third-level-content {
+    display: none;
+    transition: 0.3s;
+    background: #2d3436;
+    /* border: #f1f1f1 1px solid; */
+    /* border-radius: 5px; */
+}
+
+.second-level .third-level .third-level-content button {
+    color: #f1f1f1;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.second-level .third-level .third-level-content button:hover {
+    color: #000;
+    background: #d8d8d8;
+    text-align: left;
+    padding-left: 60px;
+}
+.second-level .third-level .third-level-content button:focus {
+    color: #2d3436;
+    background: #d8d8d8;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.group .second-level .second-level-btn:hover {
+    background: #202627;
+    color: #f1f1f1;
+    /* border: #202627 1px solid; */
+    /* font-size: 1rem; */
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    /* margin-left: 250px !important; */
+}
+
+.group .second-level .second-level-btn:focus {
+    background: #202627;
+    color: #f1f1f1;
+}
+
+/* 
+SIDEBAR CONTENT END
+*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.header,
+.footer {
+    background: #2d3436;
+}
+
+.sidebar .header {
+    padding: 0;
+    height: 60px;
+    width: inherit;
+    /* position: fixed; */
+    float: inline-start;
+}
+
+.sidebar .footer {
+    padding: 0;
+    position: fixed;
+    /* float: inherit; */
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    color: white;
+    text-align: center;
+    height: 60px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    margin-left: 250px;
+    /* padding: 16px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.container-fluid.no-padding {
+    padding: 0px;
+}
+
+.btn,
+.btn-outline-light:active {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+}
+
+.btn-outline-light:focus {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+/* 
+    Search Bar
+*/
+
+.searchbar {
+    background: #33383a;
+}
+
+.searchbar input {
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 40px;
+    border: none;
+}

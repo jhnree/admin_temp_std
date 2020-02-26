@@ -1,0 +1,33 @@
+/* primary */
+
+.btn-standard-parent .btn-standard-primary {
+    outline: none;
+    box-shadow: none;
+    min-width: 60px;
+    min-height: 40px;
+    border: #3490dc 1px solid;
+}
+
+.btn-standard-parent .btn-standard-primary.rounded {
+    border-radius: 80px !important;
+}
+
+.btn-standard-parent .btn-standard-primary:hover {
+    /* font-size: 0.9rem !important; */
+    color: #3490dc !important;
+    /* border: #3490dc 1px solid; */
+    background: #f1f1f1;
+}
+
+.btn-standard-parent .btn-standard-primary:active {
+    color: #f1f1f1 !important;
+}
+
+.btn-standard-parent .btn-standard-primary:focus {
+    color: #3490dc !important;
+    border: #3490dc 1px solid !important;
+    background: #f4f4f4 !important;
+    box-shadow: #1d68a5 1px 2px 4px !important;
+}
+
+/* end primary */

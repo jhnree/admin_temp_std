@@ -1,0 +1,92 @@
+@mixin card-default() {
+    &-body {
+        color: $default-text-color;
+        padding: .9rem;
+        font-size: .8rem;
+
+        .card-title {
+            font-size: 1.1rem;
+            font-family: 'Gentona';
+            text-transform: uppercase;
+        }
+
+        .card-subtitle {
+            font-size: .8rem;
+            margin-top: -10px;
+        }
+
+        .card-text {
+            font-size: .8rem;
+            margin: 2% 0;
+            color: $default-text-color;
+        }
+
+        .card-link {
+            @include link-standard;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .7rem;
+        }
+    }
+
+    &-header {
+        font-family: 'Gentona';
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $default-text-color;
+    }
+
+    &-footer {
+        text-align: right;
+        font-size: .8rem;
+        color: $default-text-color-light;
+    }
+
+    &-img-overlay {
+        color: $default-text-white;
+        padding: .9rem;
+        font-size: .8rem;
+
+        .card-title {
+            font-size: 1.1rem;
+            font-family: 'Gentona';
+            text-transform: uppercase;
+            color: $default-text-white;
+        }
+
+        .card-subtitle {
+            font-size: .8rem;
+            margin-top: -10px;
+        }
+
+        .card-text {
+            font-size: .8rem;
+            margin: 2% 0;
+            color: $default-text-white;
+        }
+
+        .card-link {
+            @include link-standard;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .7rem;
+        }
+    }
+
+    .list-group-light {
+        @include theme(light, solid);
+    }
+
+    .list-group-success {
+        @include theme(success, solid);
+    }
+
+    .list-group-danger {
+        @include theme(danger, solid);
+        color: $default-text-white;
+    }
+
+    .list-group-warning {
+        @include theme(warning, solid);
+    }
+}
