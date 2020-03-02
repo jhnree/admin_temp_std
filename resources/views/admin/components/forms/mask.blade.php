@@ -1,4 +1,13 @@
 <div>
+    <!-- Date Picker Input -->
+    <div class="form-group mb-4">
+      <div class="datepicker date input-group p-0 shadow-sm rounded-append">
+        <input type="text" placeholder="Choose a reservation date" class="rounded-left form-control" id="reservationDate">
+        <div class="input-group-append"><span class="input-group-text px-4"><i class="far fa-clock"></i></span></div>
+      </div>
+    </div>
+    <!-- DEnd ate Picker Input -->
+
     <div class="form-group">
       <label for="sss">SSS</label>
       <input type="text"
@@ -27,17 +36,15 @@
     <div class="form-group">
       <label for="numeric">Numeric</label>
       <input type="text"
-        class="form-control numeric uc" name="numeric" id="numeric" aria-describedby="helpId" placeholder="">
+        class="form-control numeric" name="numeric" id="numeric" aria-describedby="helpId" placeholder="">
     </div>
     <div class="form-group">
       <label for="mobile-no">Mobile Number</label>
       <input type="text"
-        class="form-control mobile-no uc" name="mobile-no" id="mobile-no" aria-describedby="helpId" placeholder="">
+        class="form-control mobile-no" name="mobile-no" id="mobile-no" aria-describedby="helpId" placeholder="">
     </div>
 </div>
-
 <script>
-    $(function(){
-        
-    })
+  $(function(){
+  })
 </script>

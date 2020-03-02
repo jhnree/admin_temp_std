@@ -10965,6 +10965,14 @@ body.agm-standard .lc {
   text-transform: lowercase;
 }
 
+body.agm-standard .rounded-right {
+  border-radius: 0 80px 80px 0 !important;
+}
+
+body.agm-standard .rounded-left {
+  border-radius: 80px 0 0 80px !important;
+}
+
 body.agm-standard .agm-standard-login {
   margin: 5rem 10%;
 }
@@ -13385,5 +13393,22 @@ body.agm-standard .brand-btn.youtube {
 
 body.agm-standard .brand-btn.youtube:hover {
   background: #950000;
+}
+
+body.agm-standard .datepicker {
+  margin-bottom: 3rem;
+}
+
+body.agm-standard .datepicker td,
+body.agm-standard .datepicker th {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.7rem;
+}
+
+body.agm-standard .datepicker input {
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 gray;
 }
 

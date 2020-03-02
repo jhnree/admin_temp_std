@@ -107,6 +107,7 @@
                                 <button class="btn form-control rounded-0" type="button">Masking</button>
                                 <button class="btn form-control rounded-0" type="button">Select w/ Search</button>
                                 <button class="btn form-control rounded-0" type="button">Validation</button>
+                                <button class="btn form-control rounded-0" type="button" btnType="inputs">Input Fields</button>
                             </div>
                         </div>
                         
@@ -155,61 +156,5 @@
                 }, 400);
             }
         }
-
-        $(function(){
-            $(".myBtn").click(function() {
-                let rightIcon = `fas fa-chevron-right`;
-                let chevronDown = 'fas fa-chevron-down';
-                let firstLevelIcon = $(this).find(".dd-icon div i");
-                let secondLevel = $(this).parent().next();
-                let iClass = firstLevelIcon.attr('class');
-                $('.second-level').css('display', 'none')
-                $('.first-level').find('.dd-icon div i').attr('class', rightIcon);
-                firstLevelIcon.attr('class', iClass === rightIcon ? chevronDown : rightIcon);
-                secondLevel.css({"display": iClass === rightIcon ? "block" : "none" });
-            })
-
-            $('.second-level-btn').click(function() {
-                let nextElement = $(this).next();
-                if(nextElement.html() === undefined){
-                    $('.components').css({'display':'none'})
-                    $('.toast').toast('hide');
-                    let btnType = $(this).attr('btnType');
-                    switch(btnType){
-                        case 'loginPage':
-                            $('#loginPage').css({'display':'block'});
-                            break;
-                        case 'card':
-                            $('#card').css({'display':'block'});
-                            break;
-                        case 'toast':
-                            $('#toast').css({'display':'block'});
-                            $('.toast').toast('show');
-                        break;
-                    }
-                }
-                else {
-                    $(this).next().css({'display': nextElement.css('display') === 'block' ? 'none' : 'block'});
-                }
-            })
-            
-            $('.third-level-content Button').click(function(){
-                let btnClicked = $(this).attr('btnType');
-                $('.components').css({'display':'none'});
-                switch (btnClicked) {
-                    case 'square':
-                        $('#btnBox').css({'display': 'block'});
-                        break;
-                    case 'outline':
-                        $('#btnOutline').css({'display': 'block'});
-                        break;
-                    case 'brand':
-                        $('#btnBrand').css({'display': 'block'});
-                        break;
-                    default:
-                        break;
-                }
-            })
-        })
     </script>
 @endpush

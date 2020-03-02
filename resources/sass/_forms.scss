@@ -48,3 +48,19 @@
         text-transform: lowercase;
     }
 }
+
+@mixin date-picker {
+    .datepicker {
+        margin-bottom: 3rem;
+        td, th {
+            min-width: 2.5rem;
+            height: 2.5rem;
+            font-size: 0.7rem;
+        }
+        input {
+            cursor: pointer;
+            color: transparent;
+            text-shadow: 0 0 0 gray;
+        }
+    }
+}
