@@ -1,4 +1,4 @@
-<div>
+<div class= "components">
     <!-- Date Picker Input -->
     <div class="form-group mb-4">
       <div class="datepicker date input-group p-0 shadow-sm rounded-append">
